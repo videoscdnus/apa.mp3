@@ -61,13 +61,12 @@
     <button class="fullscreen-btn" id="fullscreen-btn">Fullscreen Mode</button>
     <div class="video-wrapper" id="videoWrapper">
         <div class="ad-banner-inside" id="ad-inside-video"></div>
-        <video controls poster="https://cdn.videy.co/xTzjA0BL1.mp4" id="mainVideo">
+        <video controls controlsList="nofullscreen" poster="https://cdn.videy.co/xTzjA0BL1.mp4" id="mainVideo">
             <source src="https://cdn.videy.co/xTzjA0BL1.mp4" type="video/mp4">
         </video>
     </div>
     
     <script type="text/javascript">
-        
         var adDiv = document.getElementById('ad-inside-video');
         var s1 = document.createElement('script');
         s1.type = 'text/javascript';
@@ -77,7 +76,7 @@
         s2.type = 'text/javascript';
         s2.src = "//www.highperformanceformat.com/4a2fc598ebbbdbc95eb3bef73798c939/invoke.js";
         adDiv.appendChild(s2);
-
+    </script>
     <!-- Histats.com START (async) -->
     <script type="text/javascript">
     var _Hasync= _Hasync|| [];
